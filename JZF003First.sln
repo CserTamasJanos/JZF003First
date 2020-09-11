@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JZF003First", "JZF003First.csproj", "{77F82883-218A-44EA-B938-FEC1F6734FE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLSupport", "..\SQLSupport\SQLSupport.csproj", "{0223AEFE-FD34-4B83-B2BA-13A5BC819E1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77F82883-218A-44EA-B938-FEC1F6734FE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77F82883-218A-44EA-B938-FEC1F6734FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77F82883-218A-44EA-B938-FEC1F6734FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77F82883-218A-44EA-B938-FEC1F6734FE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0223AEFE-FD34-4B83-B2BA-13A5BC819E1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0223AEFE-FD34-4B83-B2BA-13A5BC819E1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0223AEFE-FD34-4B83-B2BA-13A5BC819E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0223AEFE-FD34-4B83-B2BA-13A5BC819E1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33BB8D5A-DA2F-461F-BE2C-AB5C2AA11DCC}
+	EndGlobalSection
+EndGlobal

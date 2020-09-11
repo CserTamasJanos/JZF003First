@@ -1,0 +1,12 @@
+C:\Users\Tomi\source\repos\SQLSupport\obj\Debug\SQLSupport.csprojAssemblyReference.cache
+C:\Users\Tomi\source\repos\SQLSupport\obj\Debug\SQLSupport.csproj.CoreCompileInputs.cache
+C:\Users\Tomi\source\repos\SQLSupport\bin\Debug\SQLSupport.dll
+C:\Users\Tomi\source\repos\SQLSupport\bin\Debug\SQLSupport.pdb
+C:\Users\Tomi\source\repos\SQLSupport\obj\Debug\SQLSupport.dll
+C:\Users\Tomi\source\repos\SQLSupport\obj\Debug\SQLSupport.pdb
+C:\Projectek\SQLSupport\bin\Debug\SQLSupport.dll
+C:\Projectek\SQLSupport\bin\Debug\SQLSupport.pdb
+C:\Projectek\SQLSupport\obj\Debug\SQLSupport.csprojAssemblyReference.cache
+C:\Projectek\SQLSupport\obj\Debug\SQLSupport.csproj.CoreCompileInputs.cache
+C:\Projectek\SQLSupport\obj\Debug\SQLSupport.dll
+C:\Projectek\SQLSupport\obj\Debug\SQLSupport.pdb
