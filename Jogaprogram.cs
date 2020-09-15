@@ -20,7 +20,7 @@ namespace JZF003First
 
         private void buttonTeachers_Click(object sender, EventArgs e)
         {
-            Teachers teachers = new Teachers(SQLData.ConncectionString);
+            Teachers teachers = new Teachers(SQLData.ConncectionString); //Jó így a connectionString átadása, miért kell átadni, mert ez volt a feladat?
 
             teachers.ShowDialog();
         }
@@ -39,6 +39,7 @@ namespace JZF003First
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
+            //Nem a YesNoCancel-thasználtam, a mégse és a nemitt ugyan az nem?
             DialogResult closeJoga = MessageBox.Show("Biztosan ki akar lépni?","",MessageBoxButtons.YesNo);
 
             if(closeJoga == DialogResult.Yes)
@@ -47,7 +48,7 @@ namespace JZF003First
             }
         }
 
-        private void ErrorPrintOut(string errorMessage)
+        private void ErrorPrintOut(string errorMessage) 
         {
             MessageBox.Show(errorMessage);
         }
@@ -56,7 +57,7 @@ namespace JZF003First
         {
             Queries.CEPrintout += ErrorPrintOut;
 
-            pictureBoxMain.Image = Image.FromFile(@"c:\VisualStudioProjects\JZF003First\Accessories\joga_BG.png");
+            pictureBoxMain.Image = Image.FromFile(@"c:\VisualStudioProjects\JZF003First\Accessories\joga_BG.png"); //Nem tettem az URL-eket konstansba, jó lesz így a vizsgán?
 
             buttonTeachers.ForeColor = buttonPrograms.ForeColor = buttonRegistration.ForeColor = Color.Orange;
             buttonCancel.ForeColor = Color.Red;
@@ -66,6 +67,7 @@ namespace JZF003First
 
             int errorCode;
 
+            //Remélem jó így az adatbázis vizsgálat. Vizsgálom, hogy van-e adatbázis, vannak-e táblák, a táblákban van-e adat (a Schedule lehet adat nélkül.), egyáltalán kell ezeket vizsgálni a vizgsán?
             if(Queries.DatabaseIsExist(out errorCode) && Queries.PosesTableIsExist(out errorCode) && Queries.MembersTableExist(out errorCode) && Queries.ScheduleTableIsExist(out errorCode))
             {
                 int posesCount = Queries.TableCount(1);
@@ -102,7 +104,7 @@ namespace JZF003First
                         break;                  
                 }
 
-                MessageBox.Show(errorText + "A program így nem használható.");
+                MessageBox.Show(errorText + " A program így nem használható.");
 
                 this.Close();
             }

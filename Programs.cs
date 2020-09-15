@@ -16,7 +16,7 @@ namespace JZF003First
         private List<Schedule> schedules = new List<Schedule>();
         private string givenConnectionString;
 
-        TimeSpan LessonTime
+        private TimeSpan LessonTime
         {
             get
             {
@@ -24,7 +24,7 @@ namespace JZF003First
             }
         }
 
-        Member SelectedTeacher
+        private Member SelectedTeacher
         {
             get
             {
@@ -32,7 +32,7 @@ namespace JZF003First
             }
         }
 
-        Pose SelectedPose
+        private Pose SelectedPose
         {
             get
             {
@@ -40,7 +40,7 @@ namespace JZF003First
             }
         }
 
-        Schedule SelectedSchedule
+        private Schedule SelectedSchedule
         {
             get
             {
