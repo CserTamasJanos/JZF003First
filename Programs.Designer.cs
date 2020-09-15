@@ -49,6 +49,7 @@
             // dataGridViewJogaPrograms
             // 
             this.dataGridViewJogaPrograms.AllowUserToAddRows = false;
+            this.dataGridViewJogaPrograms.AllowUserToDeleteRows = false;
             this.dataGridViewJogaPrograms.AllowUserToResizeColumns = false;
             this.dataGridViewJogaPrograms.AllowUserToResizeRows = false;
             this.dataGridViewJogaPrograms.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -56,6 +57,7 @@
             this.dataGridViewJogaPrograms.Location = new System.Drawing.Point(10, 10);
             this.dataGridViewJogaPrograms.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewJogaPrograms.Name = "dataGridViewJogaPrograms";
+            this.dataGridViewJogaPrograms.ReadOnly = true;
             this.dataGridViewJogaPrograms.RowHeadersVisible = false;
             this.dataGridViewJogaPrograms.RowHeadersWidth = 62;
             this.dataGridViewJogaPrograms.RowTemplate.Height = 21;
