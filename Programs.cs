@@ -125,7 +125,7 @@ namespace JZF003First
 
                 aRow.Cells[1].Value = aSchedule.TimeOfLesson.Hour.ToString() + ":" + ZeroStyle(aSchedule.TimeOfLesson.Minute);
                 
-                aRow.Cells[2].Value = Queries.members.FirstOrDefault(x => x.MemberID == aSchedule.Instructor).MemberName;
+                aRow.Cells[2].Value = Queries.members.FirstOrDefault(x => x.MemberID == aSchedule.Instructor).MemberName;//A FirstOrDefaultra kötelezően null vizsgálatot kell tenni, a vizsgán bíbelődnöm kell ezzel?
 
                 aRow.Cells[3].Value = Queries.poses.FirstOrDefault(x => x.PoseId == aSchedule.Curriculum).PoseName;
 

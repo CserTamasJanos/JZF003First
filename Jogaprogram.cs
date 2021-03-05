@@ -63,12 +63,13 @@ namespace JZF003First
             buttonCancel.ForeColor = Color.Red;
             buttonTeachers.BackColor = buttonPrograms.BackColor = buttonRegistration.BackColor = buttonCancel.BackColor = Color.White;
 
-            Queries.DataFromTxt(@"c:\VisualStudioProjects\JZF003First\Accessories\jogaDataRows.txt");
+            Queries.DataFromTxt(@"c:\VisualStudioProjects\JZF003First\Accessories\jogaDataRows.txt");//Nem vizsgálom, hogy létezik-e a fájl,ez alapesetben hiba, a vizsgán kell vele foglalkozni?
 
             int errorCode;
 
             //Remélem jó így az adatbázis vizsgálat. Vizsgálom, hogy van-e adatbázis, vannak-e táblák, a táblákban van-e adat (a Schedule lehet adat nélkül.), egyáltalán kell ezeket vizsgálni a vizgsán?
-            if(Queries.DatabaseIsExist(out errorCode) && Queries.PosesTableIsExist(out errorCode) && Queries.MembersTableExist(out errorCode) && Queries.ScheduleTableIsExist(out errorCode))
+            if(Queries.DatabaseIsExist(out errorCode) && Queries.PosesTableIsExist(out errorCode) &&
+                Queries.MembersTableExist(out errorCode) && Queries.ScheduleTableIsExist(out errorCode))
             {
                 int posesCount = Queries.TableCount(1);
                 int membersCount = Queries.TableCount(2);
